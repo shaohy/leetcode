@@ -9,7 +9,7 @@ class Solution:
         for i in range(len(board)):
             for j in range(len(board[i])):
                 alpha_dic[board[i][j]] = (i, j)
-        print(alpha_dic)
+
 
 
 test = Solution()
