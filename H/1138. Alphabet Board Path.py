@@ -14,13 +14,13 @@ class Solution:
                 output += "U" * abs(alpha_dic[target[i]][0] - alpha_dic[target[i + 1]][0])
             if alpha_dic[target[i]][0] < alpha_dic[target[i + 1]][0]:
                 output += "D" * abs(alpha_dic[target[i]][0] - alpha_dic[target[i + 1]][0])
-            if alpha_dic[target[i]][0] > alpha_dic[target[i + 1]][0]:
-                output += "R" * abs(alpha_dic[target[i]][1] - alpha_dic[target[i + 1]][1])
-            if alpha_dic[target[i]][0] < alpha_dic[target[i + 1]][0]:
+            if alpha_dic[target[i]][1] > alpha_dic[target[i + 1]][1]:
                 output += "L" * abs(alpha_dic[target[i]][1] - alpha_dic[target[i + 1]][1])
+            if alpha_dic[target[i]][1] < alpha_dic[target[i + 1]][1]:
+                output += "R" * abs(alpha_dic[target[i]][1] - alpha_dic[target[i + 1]][1])
             output += "!"
         return output
 
 
 test = Solution()
-print(test.alphabetBoardPath("leet"))
+print(test.alphabetBoardPath("code"))
